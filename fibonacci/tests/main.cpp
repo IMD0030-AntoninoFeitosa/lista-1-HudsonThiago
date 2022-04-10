@@ -4,12 +4,15 @@
 #include <iterator>   // std::begin(), std::end()
 #include <vector>
 
-#include "test_manager.h"
-#include "function.h"
+#include "lib/test_manager/include/test_manager.h"
+#include "../src/function.h"
 
 
 int main ( void )
 {
+    //vector<unsigned int> result = fib_below_n(2);
+    //std::cout << result.size();
+
     TestManager tm{ "Test Set" };
     {
         BEGIN_TEST( tm,"Fibonacci(1) ", "[fib_below_n]");

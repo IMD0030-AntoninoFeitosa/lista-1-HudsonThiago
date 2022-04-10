@@ -2,16 +2,16 @@
 
 Preencha os dados abaixo para identificar a autoria do trabalho.
 
-- Nome: *\<__insira seu nome aqui__>*
-- Email: *\<insira seu email aqui>*
-- Turma: *\<insira sua turma aqui>*
+- Nome: *\<Hudson Thiago Correia da Cunha>*
+- Email: *\<hudsonthiagocorreia@gmail.com>*
+- Turma: *\<>*
 
 # Questões Finalizadas
 
-- [ ] Negativos 5
-- [ ] Soma Vizinhos
-- [ ] Intervalos
-- [ ] Fibonacci
+- [x] Negativos 5
+- [x] Soma Vizinhos
+- [x] Intervalos
+- [x] Fibonacci
 - [ ] Minmax
 - [ ] Inverter
 - [ ] Filtragem

@@ -1,9 +1,27 @@
 #include "function.h"
+#include <vector>
 
 std::vector<unsigned int> fib_below_n( unsigned int n )
 {
-    // TODO: adicione o seu código aqui.
-
-    // TODO: Isto é apenas um STUB. Troque o retorno pelo que você julgar correto.
-    return std::vector<unsigned int>{};
+    std::vector<unsigned int> lista;
+    int a=1;
+    int b=1;
+    int c=0;
+    if (n==1){
+        lista.push_back(1);
+        return lista;
+    }
+    else{
+        lista.push_back(a);
+        lista.push_back(b);
+        for(int i=0;i<n;i++){
+            if(c < n){
+                c = a + b;
+                b=a;
+                a=c;
+                lista.push_back(c);
+                return lista;
+            }
+        }
+    }
 }
