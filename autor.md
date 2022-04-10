@@ -4,7 +4,7 @@ Preencha os dados abaixo para identificar a autoria do trabalho.
 
 - Nome: *\<Hudson Thiago Correia da Cunha>*
 - Email: *\<hudsonthiagocorreia@gmail.com>*
-- Turma: *\<>*
+- Turma: *\<03>*
 
 # Questões Finalizadas
 
@@ -12,7 +12,7 @@ Preencha os dados abaixo para identificar a autoria do trabalho.
 - [x] Soma Vizinhos
 - [x] Intervalos
 - [x] Fibonacci
-- [ ] Minmax
+- [x] Minmax
 - [ ] Inverter
 - [ ] Filtragem
 - [ ] Ponto em Retângulo 1

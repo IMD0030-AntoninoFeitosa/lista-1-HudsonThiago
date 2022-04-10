@@ -15,13 +15,11 @@ std::vector<unsigned int> fib_below_n( unsigned int n )
         lista.push_back(a);
         lista.push_back(b);
         for(int i=0;i<n;i++){
-            if(c < n){
-                c = a + b;
-                b=a;
-                a=c;
-                lista.push_back(c);
-                return lista;
-            }
+            c = a + b;
+            b=a;
+            a=c;
+            lista.push_back(c);
+            return lista;
         }
     }
 }
