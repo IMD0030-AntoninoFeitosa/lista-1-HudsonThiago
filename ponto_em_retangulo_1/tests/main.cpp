@@ -5,8 +5,8 @@
 #include <vector>
 #include <array>
 
-#include "test_manager.h"
-#include "function.h"
+#include "./lib/test_manager/include/test_manager.h"
+#include "../src/function.h"
 #include <iomanip>
 
 #include <iostream>

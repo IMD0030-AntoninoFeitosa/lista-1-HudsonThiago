@@ -10,31 +10,39 @@ using std::endl;
 
 int main( void )
 {
-    int m, n=2000, res=0;
-    while(!(n>-1000 && n<1000)){
-        cout << "Digite os valores de \'m\' e \'n\':\n";
-        cin >> m >> n;
-        if(!(n>-1000 && n<1000)){
-            cout << "\n===========================================\n";
-            cout << "ERRO: \'n\' precisa estar entre -1000 e 1000\n";
-            cout << "===========================================\n\n";
+    int res=0,m;
+    int matriz[100][2];
+    int x=0,y=0;
+
+    while( cin >> std::ws >> m) {
+        if(m>-10000 && m<1000){
+            matriz[x][y] = m;
+            
+            if(y==1){
+                y=0;
+                x++;
+            }else {
+                y++;            
+            }
         }
     }
 
-    if(n>0){
-        for(int i=0;i<n;i++){
-            res += m+i;
+    for(int i=0;i<x;i++){
+        res=0;
+        if(matriz[i][1]>0){
+            for(int j=0;j<matriz[i][1];j++){
+                res += matriz[i][0]+j;
+            }
+        } else if(matriz[i][1]<0){
+            for(int j=0;j<-matriz[i][1];j++){
+                res += matriz[i][0]-j;
+            }
+        } else {
+            res = matriz[i][0];
         }
-    } else if(n<0){
-        for(int i=0;i<-n;i++){
-            res += m-i;
-        }
-    } else {
-        res = m;
+
+        cout << res << endl;
     }
-
-    cout << res;
-
 
     return 0;
 }

@@ -21,12 +21,7 @@ int main(void){
     int contador=0;
     int fora_do_intervalo=0;
 
-    /*
-    Na questão a condição de parada do laço não foi escrita com clareza.
-    Então, coloquei para o valor digitado ser menor ou igual a 100, se esse valor for maior do que 100 o laço para.
-    */
-    while(x<=100) {
-        cin >> x;
+    while( cin >> std::ws >> x) {
         valores[indice] = x;
         indice++;
     }

@@ -39,6 +39,5 @@ std::pair<int,int> min_max( int V[], size_t n )
     par.first = maior_menor[1].first;
     par.second = maior_menor[0].first;
 
-    // TODO: Isso é apenas um STUB. Substitua com seu retorno correto.
     return par;
 }
