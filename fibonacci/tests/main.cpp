@@ -4,8 +4,8 @@
 #include <iterator>   // std::begin(), std::end()
 #include <vector>
 
-#include "lib/test_manager/include/test_manager.h"
-#include "../src/function.h"
+#include "test_manager.h"
+#include "function.h"
 
 
 int main ( void )

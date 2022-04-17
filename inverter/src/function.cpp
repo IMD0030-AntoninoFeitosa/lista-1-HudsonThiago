@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iterator>
 #include <array>
 
 /*! 
@@ -9,9 +10,11 @@ template <std::size_t SIZE>
 void reverse( std::array< std::string, SIZE > & arr ){
 
     std::array <std::string, SIZE> aux;
-    aux.fill(0);
+    int j;
+    aux.fill("");
     arr.swap(aux);
     for (auto i=arr.rbegin();i!=arr.rend();i++){
-        std::cout << i;
+        *i = aux[j];
+        j++;
     }
 }
