@@ -26,7 +26,6 @@ int main(void){
         indice++;
     }
 
-    cout << "\n=======================\nResultado\n=======================\n";
     cout << setprecision(4);
 
     for(int i=0;i<4;i++){
@@ -46,7 +45,7 @@ int main(void){
         }
     }
 
-    cout << static_cast<float>(fora_do_intervalo*100)/indice << endl;
+    cout << static_cast<float>((fora_do_intervalo-1)*100)/indice << endl;
 
     return 0;
 }
